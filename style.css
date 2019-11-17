@@ -1,0 +1,35 @@
+form fieldset
+{
+ margin: 10px auto 10px auto;
+ width: 20%;
+ border: solid black 1px;
+ padding: 3%;   
+}
+form legend
+{
+ padding: 10px;
+ margin: 10px;
+ border: solid black 1px;
+ font-size: 90%;
+ font-weight: bold;
+ background-color: #e8e8e8;
+}
+form label
+{
+
+    display: block;
+    font-size: 20px;
+}
+form input
+{
+    width: 80%;
+    border: solid #ccc 1px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+form input.botao
+{
+display: block;
+width: 80%;
+background-color: #12c714;
+}

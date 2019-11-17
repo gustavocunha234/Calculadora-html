@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--- Para identar clica no teclado alt + shift + f -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="calc.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <form name="calcform" method="POST">
+            <fieldset>
+                <legend> Gustavo - Calculadora</legend>
+                <label for="valor1">Digite um valor <stong>1 </stong>:</label>
+                <input type="number" name="valor1" id="valor1" />
+
+                <label for="valor2">Digite o segundo valor <strong>2</strong>:</label>
+                <input type="number" name="valor2" id="valor2" />
+
+                <label for="seleciona">Selecione a operação:</label>
+                <select name="seleciona" id="seleciona">
+                    <option value="somar">Somar</option>
+                    <option value="subtrair">Subtrair</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+                    <option value="fatorial">fatorial</option>
+                    <option value="fibonacci">Fibonacci</option>
+                    <option value="base2">Base 2</option>
+                    <option value="base10">Base 10</option>
+                </select>
+                <label for="result">Resultado:</label>
+                <input type="text" name="result" id="result" />
+
+                <input type="button" value="calcular" class="botao"
+                    onclick="calcular(document.calcform.seleciona.value)" />
+                <input type="button" value="limpar" onclick="limpar()" />
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
